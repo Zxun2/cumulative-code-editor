@@ -15,7 +15,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
   if (cell.type === "code") {
     child = (
       <>
-        <div className="action-bar-wrapper">
+        <div className="action-bar-wrapper code-bar">
           <ActionBar id={cell.id} />
         </div>
         <CodeCell cell={cell} />
@@ -24,7 +24,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
   } else {
     child = (
       <>
-        <div>
+        <div className="action-bar-wrapper">
           <ActionBar id={cell.id} />
         </div>
         <TextEditor cell={cell} />
