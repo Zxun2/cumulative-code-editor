@@ -11,7 +11,7 @@ interface PreviewProps {
 const html = `
     <html>
       <head></head>
-        <body style="background-color: #282424; font-family: roboto; ">
+        <body style="background-color: #282424; font-family: roboto; color: #fff">
           <div id="root" ></div>
           <script>
             const handleError = (err) => {

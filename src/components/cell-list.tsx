@@ -13,7 +13,7 @@ const CellList = () => {
   ));
 
   return (
-    <div>
+    <div className="cell-list">
       {renderedCells}
       <AddCell forceVisible={cells.length === 0 && true} nextCellId={null} />
     </div>
